@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ThemeToggleBtn from "./components/ThemeToggleBtn";
 
 export default function Home() {
   return (
@@ -6,7 +7,8 @@ export default function Home() {
       <div className="  mx-auto flex w-full max-w-[600px] flex-col gap-8  rounded p-2">
         <section className="flex justify-between gap-3">
           <p className="text-xl font-semibold">DevExplorer</p>
-          <p>Light</p>
+
+          <ThemeToggleBtn />
         </section>
       </div>
     </div>
