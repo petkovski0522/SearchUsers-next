@@ -1,5 +1,8 @@
 import Image from "next/image";
 import ThemeToggleBtn from "./components/ThemeToggleBtn";
+import { useState } from "react";
+import Search from "./components/Search";
+import { useQuery } from "@tanstack/react-query";
 
 export default function Home() {
   return (
