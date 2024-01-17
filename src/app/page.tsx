@@ -14,6 +14,9 @@ export default function Home() {
 
           <ThemeToggleBtn />
         </section>
+        <section>
+          <Search />
+        </section>
       </div>
     </div>
   );
