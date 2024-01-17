@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import ThemeToggleBtn from "./components/ThemeToggleBtn";
 import { useState } from "react";
 import Search from "./components/Search";
