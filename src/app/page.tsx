@@ -40,7 +40,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex min-h-screen w-full p-1.5 sm:p-4 pt-10 sm:pt-12 transition-all  dark:bg-slate-900 ">
+    <div className="flex min-h-screen w-full p-1.5 sm:p-4   pt-10 sm:pt-12 transition-all  dark:bg-slate-900 ">
       {/* container */}
       <div className="  mx-auto flex w-full max-w-[600px] flex-col gap-8  rounded p-2">
         <section className="flex  justify-between gap-3 ">
@@ -59,7 +59,7 @@ export default function Home() {
               User Not Found
             </div>
           ) : (
-            <main className="flex w-full flex-col gap-5 rounded-lg bg-white dark:bg-slate-800 px-4 py-8  min-h-[200px]">
+            <main className="flex w-full flex-col gap-5 rounded-lg  dark:bg-slate-800 px-4 py-8  min-h-[200px]">
               <section className="flex gap-4">
                 <Image
                   width={200}
@@ -97,7 +97,7 @@ export default function Home() {
                   )}
                 </p>
 
-                <div className="flex justify-between gap-3 rounded-lg bg-stone-100 px-6 py-4 dark:bg-slate-900  min-h-[50px]  ">
+                <div className="flex justify-between gap-3 rounded-lg  px-6 py-4 dark:bg-slate-900  min-h-[50px]  ">
                   <div className="flex flex-col items-center gap-2 ">
                     <p className="text-xs opacity-60">Repos</p>
                     <p className=" text-sm font-bold sm:text-base">
@@ -131,9 +131,8 @@ export default function Home() {
                       )}{" "}
                     </p>
                   </div>
-                  {/* item 2 */}
+
                   <div className="flex items-center gap-2">
-                    {/* icon */}
                     <IoIosLink className="text-xl" />
                     {data?.blog ? (
                       <Link

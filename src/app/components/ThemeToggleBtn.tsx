@@ -6,7 +6,7 @@ import { LuMoonStar } from "react-icons/lu";
 import { useTheme } from "next-themes";
 type Props = {};
 
-export default function DarkAndLightBtn({}: Props) {
+export default function ThemeToggleBtn({}: Props) {
   const { resolvedTheme, setTheme } = useTheme();
 
   function toggleDark() {
@@ -15,12 +15,10 @@ export default function DarkAndLightBtn({}: Props) {
   }
 
   return (
-    <div className="flex items-center gap-2" onClick={toggleDark}>
-      <p className="text-sm cursor-pointer">
-        {resolvedTheme === "light" ? "DARK" : "LIGHT"}
-      </p>
+    <div className="flex items-center gap-2">
+      <p className="text-sm">{resolvedTheme === "light" ? "DARK" : "LIGHT"}</p>
 
-      <button className="text-2xl">
+      <button onClick={toggleDark} className="text-2xl">
         {resolvedTheme === "light" ? <LuMoonStar /> : <IoSunnyOutline />}
       </button>
     </div>

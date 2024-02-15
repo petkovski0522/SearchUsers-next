@@ -3,7 +3,7 @@
 import type { Metadata } from "next";
 import { Inter, Space_Mono } from "next/font/google";
 import "./globals.css";
-import LayoutContainer from "./components/LayoutContainer";
+import LayoutContainer from "././components/LayoutContainer";
 
 const inter = Inter({ subsets: ["latin"] });
 const space_mono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"] });
